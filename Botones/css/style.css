@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0; }
+  * body {
+    width: 100%;
+    background: aliceblue; }
+  * .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 50%; }
+    * .container .btnenviar {
+      position: absolute;
+      overflow: hidden;
+      margin: 12px 20px;
+      width: 100px;
+      height: 40px;
+      background: none;
+      border: #5271FF solid 1px;
+      border-radius: 25px;
+      cursor: pointer; }
+      * .container .btnenviar:hover {
+        color: white; }
+      * .container .btnenviar::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        background: #5271FF;
+        border-radius: 25px;
+        transform: scale(0);
+        transition: transform 1s;
+        z-index: -2; }
+      * .container .btnenviar:hover::before {
+        transform: scale(2); }
+
+/*# sourceMappingURL=style.css.map */

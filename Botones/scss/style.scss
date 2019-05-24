@@ -1,0 +1,54 @@
+$color_rojo: rgba(0,0,0,0.5);
+$color_btn: #5271FF;
+*{
+  margin: 0;
+  padding: 0;
+  body{
+    width: 100%;
+    background: aliceblue;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    .btnenviar{
+      position: absolute;
+      overflow: hidden;
+      margin: 12px 20px;
+      width: 100px;
+      height: 40px;
+      background: none;
+      border: $color_btn solid 1px;
+      border-radius: 25px;
+      cursor: pointer;
+      &:hover{
+        color: white;
+      }
+
+      //&:hover{
+      //  background: rgba(82,113,255,0.7);
+      //  color: white;
+      //}
+      &::before{
+
+        content: "";
+        //display: none;
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        background: $color_btn;
+        border-radius: 25px;
+        transform: scale(0);
+        transition: transform 1s;
+        z-index: -2;
+      }
+      &:hover::before{
+        //display: block;
+        transform: scale(2);
+      }
+    }
+  }
+}
