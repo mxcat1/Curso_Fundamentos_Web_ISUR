@@ -20,11 +20,11 @@ body {
 #header, #main, #footer {
     font-size: 1.6em; /* inherited value (10px) x 1.6em = 16px */
 
-    /* //Desafio 1 */
+    /* //Desafio 1 Margenes*/
     margin: 0 0 2em 0;
     /**/
 }
-/*Desafio 2*/
+/*Desafio 2 Margenes*/
 #header .logo{
     margin: 2.4em 0;
 }
@@ -35,6 +35,9 @@ h1, h2, h3, h4 {
 }
 
 #main {
+    /*Desafio 1 Padding*/
+    padding: 2.5em;
+   /* */
    background-color: white;
    background-color: rgba(255, 255, 255, 0.6);
    border: #ccc solid 1px;
@@ -42,6 +45,9 @@ h1, h2, h3, h4 {
 }
 
 .button {
+    /*Desafio 2 Padding*/
+    padding: 1em;
+    /**/
     background-color: hotpink;
     color: white;
     border-radius: 8px;
@@ -59,36 +65,61 @@ blockquote p:before {
 blockquote p:after {
     content: "\201D";
 }
+/*Desafio 11 Margenes*/
+blockquote cite{
+    margin: 0.625em 0 0 0;
+}
+/**/
 
 blockquote cite:before {
     content: "- ";
 }
 
-/*Desafio 7*/
+/*Desafio 7 Margenes*/
 aside{
     margin: 0 0 2em 0;
 }
 /**/
 aside > h3 {
     font-weight: bold;
-    /*Desafio 8*/
+    /*Desafio 8 Margenes*/
     margin: 0 0 1.6em 0;
     /**/
 }
-
+/*Desafio 14 Margenes*/
+/*nota: no se a declarado ninguna clase aside en el documento html*/
+.aside{
+    margin: 0 0 2em 0;
+}
+/**/
+/*Desafio 15 Margenes*/
+.post h3{
+    margin: 0 0 1em 0;
+}
+/**/
+/*Desafio 16 Margenes*/
+.post img{
+    margin: 0 .5em 0 0;
+}
 p + .offer {
     color: red;
 }
 
 input[type="text"], input[type="email"] {
+    /*Desafio 6 Padding*/
+    padding: .4em 1em;
+    /**/
     border: none;
     box-shadow: -3px 3px 2px 0 #ccc inset;
 }
 
 input[type="submit"][class="button"] {
+    /*Desafio 4 Padding*/
+    padding: .8em;
+    /**/
     font-size: 1em;
     cursor: pointer;
-    /*Desafio 6*/
+    /*Desafio 6 Margenes*/
     margin: 2em auto 1em;
     /**/
 }
@@ -123,21 +154,33 @@ a:focus {
 }
 
 #newsletter {
+    width: 80%;
+    /*Desafio 13 Margenes*/
+    margin: 1.5em 0 0 0;
+    /**/
     color: white;
     border-radius: 8px;
     border: rgba(0,0,0,0.1) solid 5px;
     background: url("../images/icon-newsletter.png") no-repeat 91% 2%, url("../images/bg-newsletter.png") repeat 0 #00ACDF;
     padding: 6%;
 }
+/*Desafio 12 Margenes*/
+#newsletter h3{
+    margin: 0 0 1em 0;
+}
+/**/
 
 #footer {
     background: #ccc url("../images/bg-footer.jpg");
     border-top: #999 dotted 4px;
     -webkit-border-image: url("../images/bdr-footer.png") 4 repeat;
+    padding: 1.4em 0;
 }
 
 .showcase .button {
-    padding: 20px;
+    /*Desafio 3 Padding*/
+        /*padding: 20px;*/
+    /**/
     background-image: -webkit-linear-gradient(top, #FB3876 0%, #d4326d 100%);
     background-image: -moz-linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);    
     background-image: -o-linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
@@ -150,26 +193,31 @@ a:focus {
 
 #content {
     width: 65%;
-    /*Desafio 4*/
+    /*Desafio 4 Margenes*/
     margin: 0 auto;
     /**/
 }
-/*Desafio 9*/
+/*Desafio 9 Margenes*/
 #content h1,#content h2,#content h3 #content h4{
     margin: 0 0 1.6em 0;
 }
 /**/
-
+/*Desafiio 10 Margenes*/
+#content p ,#content ul{
+    margin: 0 0 1.25em 0;
+}
+/**/
 
 #header nav > ul {
     border-radius: 20px;
     border: #ccc solid 1px;
-    /*Desafio 3*/
+    /*Desafio 3 Margenes*/
     margin-top: 2em;
-    /*Desafio Extra 1*/
+    /*Desafio Extra 1 FlexBox*/
     display: flex;
     justify-content: center;
     align-content: center;
+/*    */
 }
 
 .showcase {
@@ -190,11 +238,19 @@ a:focus {
 
 #header nav > ul > li {
     background: white;
-    /*Desafio Extra 1*/
+    /*Desafio Extra 3 Paddinng*/
     padding: 5px;
+    /**/
 }
-/*Desafio 5*/
+/*Desafio 5 Margenes*/
 .container{
     max-width: 920px;
     margin: 0 auto;
 }
+/**/
+
+/*Desafio 5 Padding*/
+.testimonials{
+    padding: 1em 0 0 0;
+}
+/**/
